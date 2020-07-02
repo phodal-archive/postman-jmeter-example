@@ -20,5 +20,5 @@ before_script:
 
 script:
   - node_modules/.bin/newman run collections/WDSM.postman_collection.json --color auto --disable-unicode
-  - ./runScripts.sh ${jmeter_version}
+  - ./bin/runScripts.sh ${jmeter_version}
 
