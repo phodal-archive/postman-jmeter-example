@@ -11,4 +11,4 @@ before_script:
   - node_modules/.bin/newman --version
 
 script:
-  - node_modules/.bin/newman run tests/WDSM.postman_collection.json --color auto --disable-unicode
+  - node_modules/.bin/newman run collections/WDSM.postman_collection.json --color auto --disable-unicode
