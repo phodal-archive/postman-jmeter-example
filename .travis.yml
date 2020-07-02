@@ -2,8 +2,16 @@ language: node_js
 node_js:
   - '12'
 
+env:
+  - jmeter_version: 5.2.1
+
+jdk:
+  - openjdk11
+
 install:
   - npm install newman
+  - wget http://ftp.cuhk.edu.hk/pub/packages/apache.org//jmeter/binaries/apache-jmeter-${jmeter_version}.tgz
+  - tar -xzvf apache-jmeter-${jmeter_version}.tgz
 
 before_script:
   - node --version
@@ -12,3 +20,5 @@ before_script:
 
 script:
   - node_modules/.bin/newman run collections/WDSM.postman_collection.json --color auto --disable-unicode
+  - ./runScripts.sh ${jmeter_version}
+
