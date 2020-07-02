@@ -10,6 +10,11 @@
 
 [JMeter Bootstrap](https://github.com/cfpb/jmeter-bootstrap)
 
+```bash
+jmeter -n -t src/wdsm.jmx -l result.jtl
+```
+
+
 ```javascript
 pm.test("response is ok", function () {
     pm.response.to.have.status(200);
