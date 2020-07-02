@@ -1,5 +1,7 @@
 # postman-jmeter-example
 
+[![Build Status](https://travis-ci.org/phodal/postman-jmeter-example.svg?branch=master)](https://travis-ci.org/phodal/postman-jmeter-example)
+
 [Automatizing a Postman test with JMeter](https://apiumhub.com/tech-blog-barcelona/automatizing-postman-test-jmeter/)
 
 [PostMan API 示例](https://github.com/DannyDainton/postman-ci-pipeline-example)
